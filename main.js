@@ -5,8 +5,7 @@ let password = document.querySelector("#password");
 const comfirmPassword = document.querySelector("#comfirm-password");
 const parag = document.querySelector("p");
 
-document.querySelector("form").addEventListener("submit", (event) => {
-  event.preventDefault();
+document.querySelector("form").addEventListener("submit", () => {
   // avant d'envoyer les données au serveur, on peut faire une étape de validation
   if (password.value.length <= 1 && password.value.length <= 4) {
     parag.innerText = "faible";
